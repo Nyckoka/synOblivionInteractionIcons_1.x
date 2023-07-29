@@ -198,12 +198,6 @@ namespace SynOblivionInteractionIcons
                 {
                     iconCharacter = "F";
                 }
-                // Business Ledger | Write
-                else if (name.ToUpperContains("LEDGER")
-                        || activateTextOverride.ToUpperEquals("WRITE"))
-                {
-                    iconCharacter = "H";
-                }
                 // Pray
                 else if (name.ToUpperContainsAny("SHRINE", "ALTAR")
                         || editorId.ToUpperContains("DLC2STANDINGSTONE")
@@ -286,6 +280,12 @@ namespace SynOblivionInteractionIcons
                 else if (name.ToUpperContains("KEYHOLE"))
                 {
                     iconCharacter = "j";
+                }
+                // Business Ledger | Write
+                else if (name.ToUpperContains("LEDGER")
+                        || activateTextOverride.ToUpperEquals("WRITE"))
+                {
+                    iconCharacter = "H";
                 }
                 // Civil War Map & Map Marker (Flags)
                 else if (editorId.ToUpperContains("CWMAP"))
